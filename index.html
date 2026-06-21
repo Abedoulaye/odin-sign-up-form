@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="main-container">
+        
+        <div class="sidebar">
+            <div class="logo-container">
+            </div>
+            <div class="photo-credit">
+                Photo by 4k Wallpapers.com
+            </div>
+        </div>
+
+        <div class="content-area">
+            
+            <div class="copy-text">
+                <h2>Backend Programming Lessons touching on Python, FastAPI and Django, databases, API's and more!</h2>
+                <p>You know you want to.</p>
+            </div>
+
+            <div class="form-card">
+                <h3>Let's do this!</h3>
+                
+                <form class="input-grid">
+                    <!-- ROW 1: First and Last -->
+                    <div class="input-group">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" placeholder="E.g., John">
+                    </div>
+                    <div class="input-group">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" required placeholder="E.g., Doe">
+                    </div>
+
+                    <!-- ROW 2: Email and Phone -->
+                    <div class="input-group">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" required placeholder="E.g., JohnDoe@gmail.com" pattern="^(?!.*\.\.)[A-Za-z0-9][A-Za-z0-9._-]*[A-Za-z0-9]$">
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="text" id="phone" pattern="(\([0-9]{3}\)|[0-9]{3})[- ]?[0-9]{3}[- ]?[0-9]{4}">
+                    </div>
+
+                    <!-- ROW 3: Password and Confirm -->
+                    <div class="input-group">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}">
+                    </div>
+                    <div class="input-group">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-password" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}">
+                    </div>
+                </form>
+            </div>
+
+            <button id="btn" class="create-btn">Create Account</button>
+            <p class="login-link">Already have an account? <a href="">Log In</a></p>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
