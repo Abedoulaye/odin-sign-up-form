@@ -20,4 +20,4 @@ A responsive sign-up form built with HTML and CSS as part of [The Odin Project](
 
 ## Live Preview
 
-[View the form here](https://your-username.github.io/sign-up-form)
+[View the form here](https://abedoulaye.github.io/odin-sign-up-form)
