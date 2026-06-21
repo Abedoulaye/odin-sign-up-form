@@ -82,7 +82,7 @@ body {
 
 .input-grid {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* this is so the labels stay where they are supposed to be  */
     flex-wrap: wrap;
     gap: 20px 30px;   
     width: 100%;
